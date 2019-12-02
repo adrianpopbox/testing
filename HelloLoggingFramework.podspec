@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license 	 		 = { :type => 'Commercial', :file => 'FreshchatSDK/LICENSE', :text => 'See https://www.freshworks.com/terms' } 
   s.author       		 = { "Freshdesk" => "support@freshchat.com" }
   s.social_media_url     = "https://twitter.com/freshchatapp"
-  s.platform     		 = :ios, "8.0"
   s.source       		 = { :git => "https://github.com/adrianpopbox/testing.git", :tag => "v#{s.version}" }
-
+  s.platform = :ios, '9.0'
+  s.ios.platform = :ios, '9.0'
 end
