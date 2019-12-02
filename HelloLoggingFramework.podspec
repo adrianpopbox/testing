@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.author       		 = { "Freshdesk" => "support@freshchat.com" }
   s.social_media_url     = "https://twitter.com/freshchatapp"
   s.source       		 = { :git => "https://github.com/adrianpopbox/testing.git", :tag => "v#{s.version}" }
-  s.platform = :ios, '9.0'
-  s.ios.platform = :ios, '9.0'
+  s.platform     		 = :ios, "8.0"
+  s.source_files 		 = "*.{h,m}"
+  s.preserve_paths 		 = "*"
+  s.xcconfig       		 = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/"' }
+  s.requires_arc 		 = true
 end
