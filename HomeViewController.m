@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)btnGo:(id)sender {
-    LoginViewController *add = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    LoginViewController *add = [[LoginViewController alloc] init];
     [self presentViewController:add animated:YES completion:nil];
 }
 
