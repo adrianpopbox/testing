@@ -23,7 +23,9 @@
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)btnGo:(id)sender {
-    LoginViewController *add = [[LoginViewController alloc] init];
+    NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    NSLog(@"%@", bundleIdentifier);
+    LoginViewController *add = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
     [self presentViewController:add animated:YES completion:nil];
 }
 
