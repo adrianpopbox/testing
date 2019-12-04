@@ -7,11 +7,13 @@
 //
 
 #import "HelloLogger.h"
+#import "HomeViewController.h"
 
 @implementation HelloLogger
-    - (void)helloWithText:(NSString *)text {
-        NSLog(@"Hello, i'm Adrian %@", text);
-    }
+
+- (void)helloWithText:(NSString *)text {
+    NSLog(@"Hello, i'm Adrian %@", text);
+}
 
 -(void) openRack:(NSString *)token cabinetId:(NSString *)cabinetID email:(NSString *)emailUser name:(NSString *)nameUser phone:(NSString *)phoneUser completionHandler:(void (^)(NSDictionary *array))completionHandler{
     
@@ -92,7 +94,4 @@
     // Fire the request
     [dataTask resume];
 }
-
-
-
 @end

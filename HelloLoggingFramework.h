@@ -18,3 +18,7 @@ FOUNDATION_EXPORT const unsigned char HelloLoggingFrameworkVersionString[];
 
 
 #import <HelloLoggingFramework/HelloLogger.h>
+#import <HelloLoggingFramework/HomeViewController.h>
+#import <HelloLoggingFramework/LoginViewController.h>
+
+
