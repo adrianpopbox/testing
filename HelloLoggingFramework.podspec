@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.source_files 		 = "*.{h,m,xib}"
   s.preserve_paths 		 = "*"
   s.xcconfig       		 = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/HelloLoggingFramework"' }
-  s.requires_arc 		 = true
   s.frameworks = = "AFNetworking", "Foundation", "AVFoundation", "AudioToolbox", "CoreMedia", "CoreData", "ImageIO", "Photos", "SystemConfiguration", "Security", "WebKit"
-
+  s.requires_arc 		 = true
 end
