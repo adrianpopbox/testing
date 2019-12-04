@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "HelloLogger.h"
 
 @interface HomeViewController ()
 
@@ -25,7 +26,7 @@
 - (IBAction)btnGo:(id)sender {
     NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
     NSLog(@"%@", bundleIdentifier);
-    LoginViewController *add = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+    LoginViewController *add = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle bundleForClass:HelloLogger.class]];
     [self presentViewController:add animated:YES completion:nil];
 }
 
